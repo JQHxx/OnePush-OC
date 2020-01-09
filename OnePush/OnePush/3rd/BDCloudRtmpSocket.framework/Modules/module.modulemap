@@ -1,0 +1,6 @@
+framework module BDCloudRtmpSocket {
+  umbrella header "BDCloudRtmpSocket.h"
+
+  export *
+  module * { export * }
+}

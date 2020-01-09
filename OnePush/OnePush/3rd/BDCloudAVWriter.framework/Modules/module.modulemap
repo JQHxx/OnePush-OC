@@ -1,0 +1,6 @@
+framework module BDCloudAVWriter {
+  umbrella header "BDCloudAVWriter.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module BDCloudAVUtil {
+  umbrella header "BDCloudAVUtil.h"
+
+  export *
+  module * { export * }
+}

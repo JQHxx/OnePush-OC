@@ -1,0 +1,6 @@
+framework module BDCloudBDRtmpSession {
+  umbrella header "BDCloudBDRtmpSession.h"
+
+  export *
+  module * { export * }
+}

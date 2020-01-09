@@ -1,0 +1,6 @@
+framework module BDCloudAVEncoder {
+  umbrella header "BDCloudAVEncoder.h"
+
+  export *
+  module * { export * }
+}

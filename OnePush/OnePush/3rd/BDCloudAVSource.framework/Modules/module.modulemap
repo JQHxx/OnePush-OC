@@ -1,0 +1,6 @@
+framework module BDCloudAVSource {
+  umbrella header "BDCloudAVSource.h"
+
+  export *
+  module * { export * }
+}

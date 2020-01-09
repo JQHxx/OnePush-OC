@@ -1,0 +1,6 @@
+framework module BDCloudAVLicense {
+  umbrella header "BDCloudAVLicense.h"
+
+  export *
+  module * { export * }
+}

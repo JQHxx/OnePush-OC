@@ -1,0 +1,6 @@
+framework module BDCloudAVPlayer {
+  umbrella header "BDCloudAVPlayer.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,832 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58FAB459072D78B6401BE0D0 /* libPods-OnePushTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B352E904957C2270A3E7F6 /* libPods-OnePushTests.a */; };
+		59ACC97348A1F49364AC2E3D /* libPods-OnePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C06D866446BC956025B07FC /* libPods-OnePush.a */; };
+		65D2F890B8F50653076A1DEC /* libPods-OnePushUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F56C537BBF963D0ABDBE0A5D /* libPods-OnePushUITests.a */; };
+		A0389C8E23C6CFB2008FFFF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0389C8D23C6CFB2008FFFF5 /* AppDelegate.m */; };
+		A0389C9423C6CFB2008FFFF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0389C9323C6CFB2008FFFF5 /* ViewController.m */; };
+		A0389C9923C6CFB6008FFFF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0389C9823C6CFB6008FFFF5 /* Assets.xcassets */; };
+		A0389C9C23C6CFB6008FFFF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0389C9A23C6CFB6008FFFF5 /* LaunchScreen.storyboard */; };
+		A0389C9F23C6CFB6008FFFF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0389C9E23C6CFB6008FFFF5 /* main.m */; };
+		A0389CA923C6CFB6008FFFF5 /* OnePushTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0389CA823C6CFB6008FFFF5 /* OnePushTests.m */; };
+		A0389CB423C6CFB6008FFFF5 /* OnePushUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0389CB323C6CFB6008FFFF5 /* OnePushUITests.m */; };
+		A0389CC423C6D00E008FFFF5 /* OFOnePushView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0389CC323C6D00E008FFFF5 /* OFOnePushView.m */; };
+		A0389CCA23C6D120008FFFF5 /* BDCloudAVSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0389CC623C6D120008FFFF5 /* BDCloudAVSource.framework */; };
+		A0389CCB23C6D120008FFFF5 /* BDCloudAVUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0389CC723C6D120008FFFF5 /* BDCloudAVUtil.framework */; };
+		A0389CCC23C6D120008FFFF5 /* BDCloudAVBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0389CC823C6D120008FFFF5 /* BDCloudAVBase.framework */; };
+		A0389CCD23C6D120008FFFF5 /* BDCloudAVFilters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0389CC923C6D120008FFFF5 /* BDCloudAVFilters.framework */; };
+		A0389CD123C6D142008FFFF5 /* BDCloudAVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0389CCE23C6D141008FFFF5 /* BDCloudAVKit.framework */; };
+		A0389CD223C6D142008FFFF5 /* BDCloudAVWriter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0389CCF23C6D141008FFFF5 /* BDCloudAVWriter.framework */; };
+		A0389CD323C6D142008FFFF5 /* BDCloudAVPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0389CD023C6D142008FFFF5 /* BDCloudAVPlayer.framework */; };
+		A0389CD523C6D532008FFFF5 /* BDCloudAVLicense.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0389CD423C6D532008FFFF5 /* BDCloudAVLicense.framework */; };
+		A0389CDA23C6D58E008FFFF5 /* BDCloudBDRtmpSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0389CD723C6D58E008FFFF5 /* BDCloudBDRtmpSession.framework */; };
+		A0389CDB23C6D58E008FFFF5 /* BDCloudAVEncoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0389CD823C6D58E008FFFF5 /* BDCloudAVEncoder.framework */; };
+		A0389CDF23C6D5D9008FFFF5 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0389CDD23C6D5D9008FFFF5 /* GPUImage.framework */; };
+		A0389CE023C6D6BA008FFFF5 /* ARSDKProOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0389CDC23C6D5D8008FFFF5 /* ARSDKProOpenSDK.framework */; };
+		A0389CE123C6D6BA008FFFF5 /* ARSDKProOpenSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0389CDC23C6D5D8008FFFF5 /* ARSDKProOpenSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A0389CE523C6D97F008FFFF5 /* SpreadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A0389CE323C6D97E008FFFF5 /* SpreadButton.m */; };
+		A0389CE723C6F944008FFFF5 /* BDCloudRtmpSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0389CE623C6F944008FFFF5 /* BDCloudRtmpSocket.framework */; };
+		A0389CE923C6F964008FFFF5 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0389CE823C6F964008FFFF5 /* CoreVideo.framework */; };
+		A0389CEB23C6F96C008FFFF5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0389CEA23C6F96C008FFFF5 /* CoreMedia.framework */; };
+		A0389CED23C6F978008FFFF5 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0389CEC23C6F978008FFFF5 /* ImageIO.framework */; };
+		A0389CEF23C6F988008FFFF5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A0389CEE23C6F988008FFFF5 /* libz.tbd */; };
+		A0389CF123C6F99B008FFFF5 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A0389CF023C6F99B008FFFF5 /* libc++.tbd */; };
+		A0389CFA23C70DB5008FFFF5 /* LFGPUImageBeautyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A0389CF723C70DB5008FFFF5 /* LFGPUImageBeautyFilter.m */; };
+		A0389CFB23C70DB5008FFFF5 /* LFGPUImageEmptyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A0389CF923C70DB5008FFFF5 /* LFGPUImageEmptyFilter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0389CA523C6CFB6008FFFF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0389C8123C6CFB2008FFFF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0389C8823C6CFB2008FFFF5;
+			remoteInfo = OnePush;
+		};
+		A0389CB023C6CFB6008FFFF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0389C8123C6CFB2008FFFF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0389C8823C6CFB2008FFFF5;
+			remoteInfo = OnePush;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A0389CE223C6D6BB008FFFF5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A0389CE123C6D6BA008FFFF5 /* ARSDKProOpenSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		269F9CED7B3A7D9D3B283D92 /* Pods-OnePushTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePushTests.debug.xcconfig"; path = "Target Support Files/Pods-OnePushTests/Pods-OnePushTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2C06D866446BC956025B07FC /* libPods-OnePush.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnePush.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FF33FAFF3CFDDBB951BAF75 /* Pods-OnePush.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePush.release.xcconfig"; path = "Target Support Files/Pods-OnePush/Pods-OnePush.release.xcconfig"; sourceTree = "<group>"; };
+		862D53691319821095F9BF86 /* Pods-OnePushUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePushUITests.debug.xcconfig"; path = "Target Support Files/Pods-OnePushUITests/Pods-OnePushUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		91B352E904957C2270A3E7F6 /* libPods-OnePushTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnePushTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0389C8923C6CFB2008FFFF5 /* OnePush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnePush.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0389C8C23C6CFB2008FFFF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A0389C8D23C6CFB2008FFFF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A0389C9223C6CFB2008FFFF5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A0389C9323C6CFB2008FFFF5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A0389C9823C6CFB6008FFFF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0389C9B23C6CFB6008FFFF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0389C9D23C6CFB6008FFFF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0389C9E23C6CFB6008FFFF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A0389CA423C6CFB6008FFFF5 /* OnePushTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnePushTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0389CA823C6CFB6008FFFF5 /* OnePushTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnePushTests.m; sourceTree = "<group>"; };
+		A0389CAA23C6CFB6008FFFF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0389CAF23C6CFB6008FFFF5 /* OnePushUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnePushUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0389CB323C6CFB6008FFFF5 /* OnePushUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnePushUITests.m; sourceTree = "<group>"; };
+		A0389CB523C6CFB6008FFFF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0389CC223C6D00E008FFFF5 /* OFOnePushView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OFOnePushView.h; sourceTree = "<group>"; };
+		A0389CC323C6D00E008FFFF5 /* OFOnePushView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OFOnePushView.m; sourceTree = "<group>"; };
+		A0389CC623C6D120008FFFF5 /* BDCloudAVSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BDCloudAVSource.framework; sourceTree = "<group>"; };
+		A0389CC723C6D120008FFFF5 /* BDCloudAVUtil.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BDCloudAVUtil.framework; sourceTree = "<group>"; };
+		A0389CC823C6D120008FFFF5 /* BDCloudAVBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BDCloudAVBase.framework; sourceTree = "<group>"; };
+		A0389CC923C6D120008FFFF5 /* BDCloudAVFilters.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BDCloudAVFilters.framework; sourceTree = "<group>"; };
+		A0389CCE23C6D141008FFFF5 /* BDCloudAVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BDCloudAVKit.framework; sourceTree = "<group>"; };
+		A0389CCF23C6D141008FFFF5 /* BDCloudAVWriter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BDCloudAVWriter.framework; sourceTree = "<group>"; };
+		A0389CD023C6D142008FFFF5 /* BDCloudAVPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BDCloudAVPlayer.framework; sourceTree = "<group>"; };
+		A0389CD423C6D532008FFFF5 /* BDCloudAVLicense.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BDCloudAVLicense.framework; sourceTree = "<group>"; };
+		A0389CD723C6D58E008FFFF5 /* BDCloudBDRtmpSession.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BDCloudBDRtmpSession.framework; sourceTree = "<group>"; };
+		A0389CD823C6D58E008FFFF5 /* BDCloudAVEncoder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BDCloudAVEncoder.framework; sourceTree = "<group>"; };
+		A0389CDC23C6D5D8008FFFF5 /* ARSDKProOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ARSDKProOpenSDK.framework; sourceTree = "<group>"; };
+		A0389CDD23C6D5D9008FFFF5 /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPUImage.framework; sourceTree = "<group>"; };
+		A0389CE323C6D97E008FFFF5 /* SpreadButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpreadButton.m; sourceTree = "<group>"; };
+		A0389CE423C6D97F008FFFF5 /* SpreadButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpreadButton.h; sourceTree = "<group>"; };
+		A0389CE623C6F944008FFFF5 /* BDCloudRtmpSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BDCloudRtmpSocket.framework; sourceTree = "<group>"; };
+		A0389CE823C6F964008FFFF5 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		A0389CEA23C6F96C008FFFF5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A0389CEC23C6F978008FFFF5 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		A0389CEE23C6F988008FFFF5 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		A0389CF023C6F99B008FFFF5 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		A0389CF623C70DB5008FFFF5 /* LFGPUImageEmptyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFGPUImageEmptyFilter.h; sourceTree = "<group>"; };
+		A0389CF723C70DB5008FFFF5 /* LFGPUImageBeautyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFGPUImageBeautyFilter.m; sourceTree = "<group>"; };
+		A0389CF823C70DB5008FFFF5 /* LFGPUImageBeautyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFGPUImageBeautyFilter.h; sourceTree = "<group>"; };
+		A0389CF923C70DB5008FFFF5 /* LFGPUImageEmptyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFGPUImageEmptyFilter.m; sourceTree = "<group>"; };
+		BD8E3B62185C1D95F318AFBE /* Pods-OnePush.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePush.debug.xcconfig"; path = "Target Support Files/Pods-OnePush/Pods-OnePush.debug.xcconfig"; sourceTree = "<group>"; };
+		DD93B6E8C82350A1E262958E /* Pods-OnePushUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePushUITests.release.xcconfig"; path = "Target Support Files/Pods-OnePushUITests/Pods-OnePushUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F3BC3929236D35E09EFB60AF /* Pods-OnePushTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePushTests.release.xcconfig"; path = "Target Support Files/Pods-OnePushTests/Pods-OnePushTests.release.xcconfig"; sourceTree = "<group>"; };
+		F56C537BBF963D0ABDBE0A5D /* libPods-OnePushUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnePushUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0389C8623C6CFB2008FFFF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0389CF123C6F99B008FFFF5 /* libc++.tbd in Frameworks */,
+				A0389CEF23C6F988008FFFF5 /* libz.tbd in Frameworks */,
+				A0389CED23C6F978008FFFF5 /* ImageIO.framework in Frameworks */,
+				A0389CEB23C6F96C008FFFF5 /* CoreMedia.framework in Frameworks */,
+				A0389CE923C6F964008FFFF5 /* CoreVideo.framework in Frameworks */,
+				A0389CD523C6D532008FFFF5 /* BDCloudAVLicense.framework in Frameworks */,
+				A0389CD323C6D142008FFFF5 /* BDCloudAVPlayer.framework in Frameworks */,
+				A0389CDB23C6D58E008FFFF5 /* BDCloudAVEncoder.framework in Frameworks */,
+				A0389CE023C6D6BA008FFFF5 /* ARSDKProOpenSDK.framework in Frameworks */,
+				A0389CCA23C6D120008FFFF5 /* BDCloudAVSource.framework in Frameworks */,
+				A0389CCC23C6D120008FFFF5 /* BDCloudAVBase.framework in Frameworks */,
+				A0389CD223C6D142008FFFF5 /* BDCloudAVWriter.framework in Frameworks */,
+				A0389CD123C6D142008FFFF5 /* BDCloudAVKit.framework in Frameworks */,
+				A0389CE723C6F944008FFFF5 /* BDCloudRtmpSocket.framework in Frameworks */,
+				A0389CCB23C6D120008FFFF5 /* BDCloudAVUtil.framework in Frameworks */,
+				A0389CDA23C6D58E008FFFF5 /* BDCloudBDRtmpSession.framework in Frameworks */,
+				A0389CDF23C6D5D9008FFFF5 /* GPUImage.framework in Frameworks */,
+				A0389CCD23C6D120008FFFF5 /* BDCloudAVFilters.framework in Frameworks */,
+				59ACC97348A1F49364AC2E3D /* libPods-OnePush.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0389CA123C6CFB6008FFFF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58FAB459072D78B6401BE0D0 /* libPods-OnePushTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0389CAC23C6CFB6008FFFF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D2F890B8F50653076A1DEC /* libPods-OnePushUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E2010B3B97030FB2201414E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD8E3B62185C1D95F318AFBE /* Pods-OnePush.debug.xcconfig */,
+				4FF33FAFF3CFDDBB951BAF75 /* Pods-OnePush.release.xcconfig */,
+				269F9CED7B3A7D9D3B283D92 /* Pods-OnePushTests.debug.xcconfig */,
+				F3BC3929236D35E09EFB60AF /* Pods-OnePushTests.release.xcconfig */,
+				862D53691319821095F9BF86 /* Pods-OnePushUITests.debug.xcconfig */,
+				DD93B6E8C82350A1E262958E /* Pods-OnePushUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		91781A32D37276304D430EA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0389CF023C6F99B008FFFF5 /* libc++.tbd */,
+				A0389CEE23C6F988008FFFF5 /* libz.tbd */,
+				A0389CEC23C6F978008FFFF5 /* ImageIO.framework */,
+				A0389CEA23C6F96C008FFFF5 /* CoreMedia.framework */,
+				A0389CE823C6F964008FFFF5 /* CoreVideo.framework */,
+				2C06D866446BC956025B07FC /* libPods-OnePush.a */,
+				91B352E904957C2270A3E7F6 /* libPods-OnePushTests.a */,
+				F56C537BBF963D0ABDBE0A5D /* libPods-OnePushUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0389C8023C6CFB2008FFFF5 = {
+			isa = PBXGroup;
+			children = (
+				A0389C8B23C6CFB2008FFFF5 /* OnePush */,
+				A0389CA723C6CFB6008FFFF5 /* OnePushTests */,
+				A0389CB223C6CFB6008FFFF5 /* OnePushUITests */,
+				A0389C8A23C6CFB2008FFFF5 /* Products */,
+				2E2010B3B97030FB2201414E /* Pods */,
+				91781A32D37276304D430EA6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A0389C8A23C6CFB2008FFFF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0389C8923C6CFB2008FFFF5 /* OnePush.app */,
+				A0389CA423C6CFB6008FFFF5 /* OnePushTests.xctest */,
+				A0389CAF23C6CFB6008FFFF5 /* OnePushUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0389C8B23C6CFB2008FFFF5 /* OnePush */ = {
+			isa = PBXGroup;
+			children = (
+				A0389CC523C6D037008FFFF5 /* 3rd */,
+				A0389CC123C6CFC4008FFFF5 /* Class */,
+				A0389C8C23C6CFB2008FFFF5 /* AppDelegate.h */,
+				A0389C8D23C6CFB2008FFFF5 /* AppDelegate.m */,
+				A0389C9223C6CFB2008FFFF5 /* ViewController.h */,
+				A0389C9323C6CFB2008FFFF5 /* ViewController.m */,
+				A0389C9823C6CFB6008FFFF5 /* Assets.xcassets */,
+				A0389C9A23C6CFB6008FFFF5 /* LaunchScreen.storyboard */,
+				A0389C9D23C6CFB6008FFFF5 /* Info.plist */,
+				A0389C9E23C6CFB6008FFFF5 /* main.m */,
+			);
+			path = OnePush;
+			sourceTree = "<group>";
+		};
+		A0389CA723C6CFB6008FFFF5 /* OnePushTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0389CA823C6CFB6008FFFF5 /* OnePushTests.m */,
+				A0389CAA23C6CFB6008FFFF5 /* Info.plist */,
+			);
+			path = OnePushTests;
+			sourceTree = "<group>";
+		};
+		A0389CB223C6CFB6008FFFF5 /* OnePushUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A0389CB323C6CFB6008FFFF5 /* OnePushUITests.m */,
+				A0389CB523C6CFB6008FFFF5 /* Info.plist */,
+			);
+			path = OnePushUITests;
+			sourceTree = "<group>";
+		};
+		A0389CC123C6CFC4008FFFF5 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				A0389CF523C70DB5008FFFF5 /* filter */,
+				A0389CE423C6D97F008FFFF5 /* SpreadButton.h */,
+				A0389CE323C6D97E008FFFF5 /* SpreadButton.m */,
+				A0389CC223C6D00E008FFFF5 /* OFOnePushView.h */,
+				A0389CC323C6D00E008FFFF5 /* OFOnePushView.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		A0389CC523C6D037008FFFF5 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				A0389CE623C6F944008FFFF5 /* BDCloudRtmpSocket.framework */,
+				A0389CDC23C6D5D8008FFFF5 /* ARSDKProOpenSDK.framework */,
+				A0389CDD23C6D5D9008FFFF5 /* GPUImage.framework */,
+				A0389CD823C6D58E008FFFF5 /* BDCloudAVEncoder.framework */,
+				A0389CD723C6D58E008FFFF5 /* BDCloudBDRtmpSession.framework */,
+				A0389CD423C6D532008FFFF5 /* BDCloudAVLicense.framework */,
+				A0389CCE23C6D141008FFFF5 /* BDCloudAVKit.framework */,
+				A0389CD023C6D142008FFFF5 /* BDCloudAVPlayer.framework */,
+				A0389CCF23C6D141008FFFF5 /* BDCloudAVWriter.framework */,
+				A0389CC823C6D120008FFFF5 /* BDCloudAVBase.framework */,
+				A0389CC923C6D120008FFFF5 /* BDCloudAVFilters.framework */,
+				A0389CC623C6D120008FFFF5 /* BDCloudAVSource.framework */,
+				A0389CC723C6D120008FFFF5 /* BDCloudAVUtil.framework */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		A0389CF523C70DB5008FFFF5 /* filter */ = {
+			isa = PBXGroup;
+			children = (
+				A0389CF623C70DB5008FFFF5 /* LFGPUImageEmptyFilter.h */,
+				A0389CF723C70DB5008FFFF5 /* LFGPUImageBeautyFilter.m */,
+				A0389CF823C70DB5008FFFF5 /* LFGPUImageBeautyFilter.h */,
+				A0389CF923C70DB5008FFFF5 /* LFGPUImageEmptyFilter.m */,
+			);
+			path = filter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0389C8823C6CFB2008FFFF5 /* OnePush */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0389CB823C6CFB6008FFFF5 /* Build configuration list for PBXNativeTarget "OnePush" */;
+			buildPhases = (
+				0BB8776B8C6A870C394D7DA8 /* [CP] Check Pods Manifest.lock */,
+				A0389C8523C6CFB2008FFFF5 /* Sources */,
+				A0389C8623C6CFB2008FFFF5 /* Frameworks */,
+				A0389C8723C6CFB2008FFFF5 /* Resources */,
+				A0389CE223C6D6BB008FFFF5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OnePush;
+			productName = OnePush;
+			productReference = A0389C8923C6CFB2008FFFF5 /* OnePush.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0389CA323C6CFB6008FFFF5 /* OnePushTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0389CBB23C6CFB6008FFFF5 /* Build configuration list for PBXNativeTarget "OnePushTests" */;
+			buildPhases = (
+				A5EB6AEE8B44A39A04D3889D /* [CP] Check Pods Manifest.lock */,
+				A0389CA023C6CFB6008FFFF5 /* Sources */,
+				A0389CA123C6CFB6008FFFF5 /* Frameworks */,
+				A0389CA223C6CFB6008FFFF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0389CA623C6CFB6008FFFF5 /* PBXTargetDependency */,
+			);
+			name = OnePushTests;
+			productName = OnePushTests;
+			productReference = A0389CA423C6CFB6008FFFF5 /* OnePushTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A0389CAE23C6CFB6008FFFF5 /* OnePushUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0389CBE23C6CFB6008FFFF5 /* Build configuration list for PBXNativeTarget "OnePushUITests" */;
+			buildPhases = (
+				6555D7FE2E9E112EBABB9815 /* [CP] Check Pods Manifest.lock */,
+				A0389CAB23C6CFB6008FFFF5 /* Sources */,
+				A0389CAC23C6CFB6008FFFF5 /* Frameworks */,
+				A0389CAD23C6CFB6008FFFF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0389CB123C6CFB6008FFFF5 /* PBXTargetDependency */,
+			);
+			name = OnePushUITests;
+			productName = OnePushUITests;
+			productReference = A0389CAF23C6CFB6008FFFF5 /* OnePushUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0389C8123C6CFB2008FFFF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = OFweek01;
+				TargetAttributes = {
+					A0389C8823C6CFB2008FFFF5 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					A0389CA323C6CFB6008FFFF5 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = A0389C8823C6CFB2008FFFF5;
+					};
+					A0389CAE23C6CFB6008FFFF5 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = A0389C8823C6CFB2008FFFF5;
+					};
+				};
+			};
+			buildConfigurationList = A0389C8423C6CFB2008FFFF5 /* Build configuration list for PBXProject "OnePush" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0389C8023C6CFB2008FFFF5;
+			productRefGroup = A0389C8A23C6CFB2008FFFF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0389C8823C6CFB2008FFFF5 /* OnePush */,
+				A0389CA323C6CFB6008FFFF5 /* OnePushTests */,
+				A0389CAE23C6CFB6008FFFF5 /* OnePushUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0389C8723C6CFB2008FFFF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0389C9C23C6CFB6008FFFF5 /* LaunchScreen.storyboard in Resources */,
+				A0389C9923C6CFB6008FFFF5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0389CA223C6CFB6008FFFF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0389CAD23C6CFB6008FFFF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BB8776B8C6A870C394D7DA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OnePush-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6555D7FE2E9E112EBABB9815 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OnePushUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5EB6AEE8B44A39A04D3889D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OnePushTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0389C8523C6CFB2008FFFF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0389CFB23C70DB5008FFFF5 /* LFGPUImageEmptyFilter.m in Sources */,
+				A0389CE523C6D97F008FFFF5 /* SpreadButton.m in Sources */,
+				A0389CC423C6D00E008FFFF5 /* OFOnePushView.m in Sources */,
+				A0389C9423C6CFB2008FFFF5 /* ViewController.m in Sources */,
+				A0389C8E23C6CFB2008FFFF5 /* AppDelegate.m in Sources */,
+				A0389C9F23C6CFB6008FFFF5 /* main.m in Sources */,
+				A0389CFA23C70DB5008FFFF5 /* LFGPUImageBeautyFilter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0389CA023C6CFB6008FFFF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0389CA923C6CFB6008FFFF5 /* OnePushTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0389CAB23C6CFB6008FFFF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0389CB423C6CFB6008FFFF5 /* OnePushUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0389CA623C6CFB6008FFFF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0389C8823C6CFB2008FFFF5 /* OnePush */;
+			targetProxy = A0389CA523C6CFB6008FFFF5 /* PBXContainerItemProxy */;
+		};
+		A0389CB123C6CFB6008FFFF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0389C8823C6CFB2008FFFF5 /* OnePush */;
+			targetProxy = A0389CB023C6CFB6008FFFF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0389C9A23C6CFB6008FFFF5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0389C9B23C6CFB6008FFFF5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0389CB623C6CFB6008FFFF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A0389CB723C6CFB6008FFFF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0389CB923C6CFB6008FFFF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD8E3B62185C1D95F318AFBE /* Pods-OnePush.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76RA22T2W7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OnePush/3rd",
+				);
+				INFOPLIST_FILE = OnePush/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.www.OnePush;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0389CBA23C6CFB6008FFFF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FF33FAFF3CFDDBB951BAF75 /* Pods-OnePush.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76RA22T2W7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OnePush/3rd",
+				);
+				INFOPLIST_FILE = OnePush/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.www.OnePush;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A0389CBC23C6CFB6008FFFF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 269F9CED7B3A7D9D3B283D92 /* Pods-OnePushTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OnePushTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.www.OnePushTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnePush.app/OnePush";
+			};
+			name = Debug;
+		};
+		A0389CBD23C6CFB6008FFFF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3BC3929236D35E09EFB60AF /* Pods-OnePushTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OnePushTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.www.OnePushTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnePush.app/OnePush";
+			};
+			name = Release;
+		};
+		A0389CBF23C6CFB6008FFFF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 862D53691319821095F9BF86 /* Pods-OnePushUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OnePushUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.www.OnePushUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OnePush;
+			};
+			name = Debug;
+		};
+		A0389CC023C6CFB6008FFFF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD93B6E8C82350A1E262958E /* Pods-OnePushUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OnePushUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.www.OnePushUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OnePush;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0389C8423C6CFB2008FFFF5 /* Build configuration list for PBXProject "OnePush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0389CB623C6CFB6008FFFF5 /* Debug */,
+				A0389CB723C6CFB6008FFFF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0389CB823C6CFB6008FFFF5 /* Build configuration list for PBXNativeTarget "OnePush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0389CB923C6CFB6008FFFF5 /* Debug */,
+				A0389CBA23C6CFB6008FFFF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0389CBB23C6CFB6008FFFF5 /* Build configuration list for PBXNativeTarget "OnePushTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0389CBC23C6CFB6008FFFF5 /* Debug */,
+				A0389CBD23C6CFB6008FFFF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0389CBE23C6CFB6008FFFF5 /* Build configuration list for PBXNativeTarget "OnePushUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0389CBF23C6CFB6008FFFF5 /* Debug */,
+				A0389CC023C6CFB6008FFFF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0389C8123C6CFB2008FFFF5 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module BDCloudAVFilters {
+  umbrella header "BDCloudAVFilters.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_OnePushTests {
+  umbrella header "Pods-OnePushTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
